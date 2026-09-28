@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+#root {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    color: #202124;
+}
+body {
+    background: #eef1f5;
+}
+button,
+input,
+textarea {
+    font: inherit;
+}
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+.app-shell {
+    height: 100%;
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 30px #0000000d;
+}
+.chat-panel {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f5f7fa;
+}
+.icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    display: grid;
+    place-items: center;
+    color: #68707d;
+}
+.icon-btn:hover {
+    background: #f2f4f7;
+}
+
+
+
+.welcome {
+    height: 100%;
+    justify-content: center;
+}
+.welcome h2 {
+    margin: 12px 0 5px;
+    color: #363b43;
+}
+.welcome p {
+    margin: 0 0 20px;
+}
+.welcome-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background: #e7f0ff;
+    color: #2f7df6;
+    display: grid;
+    place-items: center;
+}
+.primary {
+    background: #2f7df6;
+    color: white;
+    border-radius: 11px;
+    padding: 10px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-weight: 600;
+}
+.primary:hover {
+    background: #246ce0;
+}
+.wide {
+    width: 100%;
+}
+
+.inline-error {
+    padding: 8px 18px;
+    background: #fff1f1;
+    color: #c33d3d;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.danger {
+    color: #c33d3d;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.error {
+    background: #fff0f0;
+    color: #c33d3d;
+    border-radius: 9px;
+    padding: 9px 11px;
+    font-size: 12px;
+    margin: 10px 0;
+}
+@media (max-width: 720px) {
+    .chat-panel {
+        display: none;
+    }
+    .sidebar.mobile-visible + .chat-panel {
+        display: none;
+    }
+    
+}

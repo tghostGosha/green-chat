@@ -1,0 +1,48 @@
+.avatar {
+    flex: none;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #dce8fb;
+    color: #3973c9;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.chat-header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #eceef1;
+    background: #fff;
+    gap: 12px;
+}
+.chat-header > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.chat-header small {
+    font-size: 12px;
+    color: #9097a2;
+}
+.back-btn {
+    display: none;
+}
+.header-more {
+    margin-left: auto;
+}
+@media (max-width: 720px) {
+    .back-btn {
+        display: grid;
+    }
+    .chat-header {
+        padding: 0 12px;
+    }
+
+    .header-more {
+        display: none;
+    }
+}
